@@ -1,0 +1,16 @@
+@use '../abstracts/mixins' as v;
+
+html .res-nightmode {
+  div#header-bottom-right,
+  #header .tabmenu,
+  body.listing-page .side #search,
+  .side .sidecontentbox,
+  .account-activity-box {
+    @include v.theme("background-color", v.$body, true);
+  }
+
+  .link .entry .buttons li a.comments,
+  .md p {
+    @include v.theme("color", v.$bodyText, true);
+  }
+}

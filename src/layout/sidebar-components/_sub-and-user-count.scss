@@ -29,6 +29,14 @@
   }
 }
 
+html .res-nightmode {
+  .subscribers,
+  .users-online {
+    @include v.theme("color", v.$bodyText, true);
+    @include v.sunken(v.$body, true);
+  }
+}
+
 .subscribers::after {
   content: " " + v.$readers;
 }
